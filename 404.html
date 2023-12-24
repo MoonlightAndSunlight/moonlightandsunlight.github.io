@@ -14,8 +14,8 @@
   algolia: undefined,
   localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
   translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
   copy: {
     success: '复制成功',
     error: '复制错误',
@@ -33,7 +33,7 @@
     day: '天前',
     month: '个月前'
   },
-  copyright: undefined,
+  copyright: {"limitCount":100,"languages":{"author":"作者: Sleepsheepzzz","link":"链接: ","source":"来源: 已眠の羊","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
   lightbox: 'fancybox',
   Snackbar: undefined,
   infinitegrid: {
@@ -52,9 +52,9 @@
   title: '页面没有找到',
   isPost: false,
   isHome: false,
-  isHighlightShrink: false,
+  isHighlightShrink: true,
   isToc: false,
-  postUpdate: '2023-12-25 02:34:25'
+  postUpdate: '2023-12-25 03:08:20'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
